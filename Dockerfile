@@ -19,7 +19,7 @@ FROM ruby:3.2.0-alpine
 ENV INFO="Truemail lightweight rack based web API 🚀" \
     APP_USER="truemail" \
     APP_HOME="/var/lib/truemail-rack" \
-    APP_PORT="9292"
+    APP_PORT="8080"
 LABEL description=$INFO
 RUN apk add curl && \
     adduser -D $APP_USER
